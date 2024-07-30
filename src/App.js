@@ -51,7 +51,7 @@ function App() {
   function renameTodo(index, newName){
     setTodos(prev =>{
       const newTodos = [...prev]
-      newTodos[index].name =newName
+      newTodos[index].name = newName
       return newTodos
     })
 

@@ -18,7 +18,7 @@ function MyForm({onAdd}) {
         <input type="text"  value = {taskName}
              onChange={ev =>setTaskName(ev.target.value)}
              placeholder='New task...'/>
-             <button> <FaPlus size={10} color="currentColor" /> </button>
+             <button className='buttonAdd'> <FaPlus size={10} color="currentColor" /> </button>
     </form>
   )
 }

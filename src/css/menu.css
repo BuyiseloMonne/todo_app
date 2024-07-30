@@ -1,65 +1,84 @@
+/* Basic styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #7820e4;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 .burger-menu {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .burger-icon {
-  width: 30px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.burger-icon .line {
-  width: 100%;
+.line {
+  width: 25px;
   height: 3px;
-  background-color: black;
-  margin: 5px 0;
-  transition: all 0.3s ease;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
-.burger-icon .line.open:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+.line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
 }
 
-.burger-icon .line.open:nth-child(2) {
+.line.open:nth-child(2) {
   opacity: 0;
 }
 
-.burger-icon .line.open:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+.line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
-.header {
-    display: flex; /* Use flexbox to align items in a row */
-    
-    gap: 10px; /* Optional space between items */
-    padding: 10px; /* Optional padding around the header */
-  }
-
-.menu {
-  display: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.menu.show {
+.navbar-title {
+  margin-left: 20px;
   display: flex;
-  position: relative;
 }
 
-.menu ul {
-  list-style-type: none;
-  padding: 0;
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.menu ul li {
-  padding: 10px 20px;
-  cursor: pointer;
+.nav-links.open {
+  display: flex;
 }
 
-.menu ul li:hover {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
 
+.nav-link:hover {
+  text-decoration: underline;
+}
+.search-bar {
+  margin-left: 110px;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  
 }
