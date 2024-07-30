@@ -37,11 +37,9 @@ function BurgerMenu () {
 
       </div>
         <div className={`nav-links ${isOpen ? 'show': ''}`}>
-          <ul>
-            <li>ALL</li>
-            <li>ACTIVE</li>
-            <li>COMPLETED</li>
-          </ul>
+        <a href='#'>All</a>
+        <a href='#'>Recent</a>
+        <a href='#'>Done</a>
         </div>
          
       </nav>
