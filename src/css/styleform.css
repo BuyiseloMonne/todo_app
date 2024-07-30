@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form input[type="text"] {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .form input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  .form input[type="text"]:focus {
+    border-color: #a777e3;
+  }
+  
+  .form button {
+    background: #6e8efb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form button:hover {
+    background: #a777e3;
+  }
+  
