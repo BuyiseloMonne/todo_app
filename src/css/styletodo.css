@@ -5,12 +5,12 @@
     align-items: center;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     border-radius: 12px;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #fff;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
   }
 
 
@@ -36,8 +36,12 @@
     /* padding: 10px 20px; */
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 2s ease;
     
+}
+
+.delete:hover {
+  background: #a777e3;
 }
 
 
