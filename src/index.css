@@ -19,3 +19,7 @@ body {
     background: #fff;
    
   }
+
+  h1 {
+    align-items: center;
+  }

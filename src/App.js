@@ -2,6 +2,7 @@ import './App.css';
 import MyForm from './components/todoForm';
 import MyTodo from './components/todo';
 import { useEffect, useState } from 'react';
+import BurgerMenu from './components/menu'
 
 
 function App() {
@@ -58,7 +59,8 @@ function App() {
   
   return (
     <>
-    <h1>TO-DO APP</h1>
+    
+<BurgerMenu />
 
 <MyForm onAdd={AddTodo} />
 

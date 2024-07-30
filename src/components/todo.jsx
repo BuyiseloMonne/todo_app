@@ -4,10 +4,10 @@ import Mycheckbox from './checkbox'
 import { MdDelete } from 'react-icons/md';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
-function MyTodo({name,done, onToggle,onTrash}) {
+function MyTodo({name,done, onToggle,onTrash,onRename}) {
 
-    const [editMode, setEditMode] =useState('')
-    
+    const [editMode, setEditMode] =useState(false)
+    const [tempName, setTempName] = useState(name);
     
 
 
@@ -29,10 +29,12 @@ function MyTodo({name,done, onToggle,onTrash}) {
     {editMode && (
        <form>
         <input type="text" value={name}
-               //  onChange={ev => onRename(ev.target.value)}
+                  onChange = {ev => onRename(ev.target.value)}
         />
-
+            
         </form>
+        
+        
     )}
     
        <button className='delete' onClick={() => onTrash(done)}><MdDelete size={24} color="currentColor" /></button>
