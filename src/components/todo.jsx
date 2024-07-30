@@ -13,6 +13,7 @@ function MyTodo({name,done, onToggle,onTrash}) {
 
 
   return (
+   <div className='body'>
     <div className='task'>
        
        <Mycheckbox Checked = {done} onClick = {() => onToggle(!done)}/>
@@ -28,7 +29,7 @@ function MyTodo({name,done, onToggle,onTrash}) {
     {editMode && (
        <form>
         <input type="text" value={name}
-                onChange={ev => onRename(ev.target.value)}
+               //  onChange={ev => onRename(ev.target.value)}
         />
 
         </form>
@@ -38,7 +39,7 @@ function MyTodo({name,done, onToggle,onTrash}) {
         
     </div>
 
-    
+    </div>
   )
 }
 
