@@ -13,7 +13,7 @@ body {
   
   .container {
     width: 500px; /* Typical width for a mobile phone */
-    height: 580px; /* Typical height for a mobile phone */
+   
      border: 1px solid #a777e3;
      margin-top: 10px;
      border-radius: 5px;
